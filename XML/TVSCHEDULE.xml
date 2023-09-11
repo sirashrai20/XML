@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TVSCHEDULE [  
+<!ELEMENT TVSCHEDULE (channel+)>
+<!ELEMENT channel (banner, day+)>
+<!ELEMENT banner (#PCDATA)>
+<!ELEMENT day (date,(holiday | programslot)+)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT holiday (#PCDATA)>
+<!ELEMENT programslot (time, title, description)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST TVSCHEDULE Name CDATA #REQUIRED>
+<!ATTLIST channel chan CDATA #REQUIRED>
+<!ATTLIST programslot vtr CDATA #IMPLIED>
+<!ATTLIST title
+   Rating CDATA #IMPLIED
+   Language CDATA #IMPLIED
+>
+]>
+<TVSCHEDULE name="Name">
+    <channel channel="chan">
+        <banner>NGG nigga</banner>
+        <day>
+            <date>2012/03/06</date>
+            <programslot att="vtr">
+                <time>3:45</time>
+                <title>gfgdf</title>
+                <description>fdgfgg</description>
+            </programslot>
+        </day>
+        <day>
+            <date>2012/03/06</date>
+            <programslot att="vtr">
+                <time>5:45</time>
+                <title>Chat Fuddu</title>
+                <description>Aakazaya</description>
+            </programslot>
+        </day>
+        <day>
+            <date>2012/03/06</date>
+            <programslot att="vtr">
+                <time>7:45</time>
+                <title>Do It Gogo</title>
+                <description>roieoe</description>
+            </programslot>
+        </day>
+        <day>
+            <date>2012/03/06</date>
+            <programslot att="vtr">
+                <time>9:45</time>
+                <title>The Lost Geso</title>
+                <description>Lost Means Lost</description>
+            </programslot>
+        </day>
+        <day>
+            <date>2012/03/06</date>
+            <programslot att="vtr">
+                <time>11:45</time>
+                <title>The Hallow</title>
+                <description>sdgfhjsd</description>
+            </programslot>
+        </day>
+    </channel>
+</TVSCHEDULE>
